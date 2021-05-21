@@ -1,0 +1,46 @@
+.personalMessage {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  max-inline-size: 280px;
+  margin: auto;
+}
+
+.personalMessage img {
+}
+
+.personalMessage p:nth-of-type(1) {
+  margin: 1.5rem 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.personalMessage p:nth-of-type(2) {
+  font: var(--body2);
+  margin: 0;
+  opacity: 0.5;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .personalMessage {
+    text-align: center;
+    max-inline-size: 1132px;
+  }
+  .personalMessage p:nth-of-type(1) {
+    font: var(--headline4);
+    text-align: center;
+  }
+  .personalMessage p:nth-of-type(2) {
+    font: var(--headline5);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .personalMessage {
+    padding: 5rem;
+  }
+}
